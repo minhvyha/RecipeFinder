@@ -1,8 +1,10 @@
 import React from 'react'
+import Image from 'next/image'
+import logo from '../public/assets/blue-abstract-logo-vector.jpg'
 
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <div>Nav <Image src={logo} alt='' /></div>
   )
 }
 
