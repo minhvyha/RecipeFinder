@@ -3,12 +3,11 @@ import Image from 'next/image';
 import { createContext } from 'react';
 
 interface MainContextType {
-  // Define your context properties here
+  account: boolean
 }
 
 export const MainContext = createContext<MainContextType>({
-  // Provide initial values for your context properties here
-});
+account: true});
 
 export default function Home() {
   return (
