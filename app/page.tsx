@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image';
 import { createContext } from 'react';
-
+import Main from '@/components/Main';
 interface MainContextType {
   account: boolean
 }
@@ -12,7 +12,8 @@ account: true});
 export default function Home() {
   return (
     <main>
-      </main>
+<Main />
+    </main>
 
   );
 }
