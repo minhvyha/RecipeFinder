@@ -13,9 +13,9 @@ const Nav = () => {
         <Image src={logo} alt='' width={50} height={50} />
         <h1 className="ml-2">Recipe Finder</h1>
       </Link>
-      <button className={`px-4 py-2 rounded bg-background-400 text-white hover:bg-background-500 transition-all`}>
-        {account ? 'Dashboard' : 'Sign In'}
-      </button>
+      <Link href={account ? 'dashboard' : 'login'} className={`px-4 py-2 rounded bg-background-400 text-white hover:bg-background-500 transition-all`}>
+        {account ? 'Dashboard' : 'Log In'}
+      </Link>
     </nav>
   );
 };
