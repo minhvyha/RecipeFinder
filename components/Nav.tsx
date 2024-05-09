@@ -1,5 +1,6 @@
 'use client'
 import React, { useContext } from 'react';
+import Link from 'next/link';
 import { MainContext } from '../app/page'; // adjust the import path as needed
 import logo from '../public/assets/blue-abstract-logo-vector.jpg'; // adjust the import path as needed
 import Image from 'next/image';
@@ -8,11 +9,11 @@ const Nav = () => {
 
   return (
     <nav className="flex items-center justify-between py-4 px-8 bg-white text-black border-b-2 border-gray-300">
-      <div className="flex items-center">
+      <Link href='/' className="flex items-center cursor-pointer">
         <Image src={logo} alt='' width={50} height={50} />
         <h1 className="ml-2">Recipe Finder</h1>
-      </div>
-      <button className={`px-4 py-2 rounded ${account ? 'bg-orange-500 text-white' : 'border border-orange-500 text-orange-500'}`}>
+      </Link>
+      <button className={`px-4 py-2 rounded bg-background-400 text-white hover:bg-background-500 transition-all`}>
         {account ? 'Dashboard' : 'Sign In'}
       </button>
     </nav>
