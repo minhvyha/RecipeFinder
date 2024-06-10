@@ -1,0 +1,5 @@
+{
+  "code": 11000,
+  "result": "{\"sentences\":[{\"bt\":240,\"et\":1250,\"s\":\"Fuck You.\",\"words\":[{\"bt\":240,\"et\":715,\"w\":\"Fuck\"},{\"bt\":715,\"et\":1250,\"w\":\"You.\"}]}],\"version\":1}",
+  "msg": "Transcribed successfully"
+}

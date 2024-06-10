@@ -17,7 +17,7 @@ const FILE_PATH = "/Users/minhha/Downloads/Crape 1.mp4";
 // 2, the json format for the generated subtitles with begin time and end time.
 // 3, the srt format for the generated subtitles with begin time and end time.
 // 4, the plain text format for transcription results without begin time and end time.
-const RESULT_TYPE = 1;
+const RESULT_TYPE = 4;
 //Parameter of the remote file
 const createData = querystring.stringify({
     lang: LANG,
